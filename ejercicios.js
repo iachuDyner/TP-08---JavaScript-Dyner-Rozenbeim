@@ -9,5 +9,41 @@ function pedirDatos() {
     document.getElementById("resultado").textContent = mensaje;
 }
 
-// Llama a la función al cargar el script
 pedirDatos();
+
+const frutas = [
+    "manzana",
+    "plátano",
+    "naranja",
+    "fresa",
+    "kiwi",
+    "mango",
+    "piña",
+    "pera",
+    "uva",
+    "cereza"
+];
+
+console.log("Lista de frutas disponibles:");
+
+mostrarFrutas(frutas);
+const frutaBuscada = prompt("¿Qué fruta estás buscando?");
+
+BuscarFruta(frutas, frutaBuscada);
+
+
+console.log(10 == '10'); 
+console.log(10 === '10'); 
+console.log(typeof 10.6); 
+console.log(true == 1); 
+
+
+const ciudad = {
+    nombre: "Buenos Aires",
+    fechaFundacion: "1536",
+    poblacion: 2890000,
+    extension: "203 km²"
+};
+
+
+RecorrerCiudades(ciudad);
