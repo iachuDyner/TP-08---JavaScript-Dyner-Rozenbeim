@@ -1,9 +1,13 @@
-function calcularEdad(){
-    const nombre = prompt('ingrese su nombre:')
-    const edad = prompt('Ingrese su fecha de nacimiento')
-    let calculo = (new iachuDate().getTime()) - edad
+function pedirDatos() {
+    const nombre = prompt("¿Cuál es tu nombre?");
+    const fechaNacimiento = prompt("¿Cuál es tu fecha de nacimiento? (YYYY-MM-DD)");
 
-    alert(`HOLA ${nombre}, TIENES ${({calculo})}, AÑOS!`)
+    const edad = calcularEdad(fechaNacimiento);
+    const mensaje = `Hola ${nombre}, tienes ${edad} años!`;
+
+    console.log(mensaje);
+    document.getElementById("resultado").textContent = mensaje;
 }
 
-calcularEdad()
+// Llama a la función al cargar el script
+pedirDatos();
