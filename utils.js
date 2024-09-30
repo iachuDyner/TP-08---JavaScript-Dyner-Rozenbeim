@@ -62,3 +62,12 @@ function DibujoDos()
     console.log(linea5)
     
 }
+
+function SepararNombres(nombres)
+{
+    let listaNombres = nombres.split(',')
+
+    let nombresConA = listaNombres.filter(nombre => nombre[0].toLowerCase()=== 'a')
+
+    console.log(nombresConA)
+}

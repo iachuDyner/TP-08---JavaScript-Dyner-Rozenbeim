@@ -56,3 +56,9 @@ CrearDoble(numeros);
 
 DibujoUno();
 DibujoDos();
+
+
+
+let nombresArray = prompt("Ingrese una lista de nombres separados por comas")
+
+SepararNombres(nombresArray)
