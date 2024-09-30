@@ -28,3 +28,11 @@ function RecorrerCiudades(ciudad)
     console.log(`Clave: ${clave}, Valor: ${ciudad[clave]}`);
 }
 }
+
+
+function CrearDoble(numeros)
+{
+const numerosDobles = numeros.map(numeros => numeros*2)
+
+console.log(numerosDobles)
+}
