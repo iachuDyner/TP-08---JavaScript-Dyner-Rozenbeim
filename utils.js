@@ -111,3 +111,19 @@ mostrarButton.addEventListener('click', () => {
     const resultadoString = elementosArray.join(' - ');
     document.getElementById('resultados2').innerHTML = resultadoString;
 });
+
+const calcularButton = document.getElementById('calcularButton');
+
+calcularButton.addEventListener('click', () => {
+    const pedidosInput = document.getElementById('pedidosInput').value;
+    const pedidosArray = pedidosInput.split(',').map(pedido => pedido.trim());
+    let recaudacionTotal = 0;
+    pedidosArray.forEach(pedido => {
+        const [nombre, total] = pedido.split(':');
+        const totalNum = parseFloat(total);
+        if (!isNaN(totalNum)) {
+            recaudacionTotal += totalNum;
+        }
+    });
+    document.getElementById('resultados3').innerHTML = `Total: $${recaudacionTotal.toFixed(2)}`;
+});
