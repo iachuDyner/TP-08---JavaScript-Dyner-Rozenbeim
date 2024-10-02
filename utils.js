@@ -88,5 +88,16 @@ reemplazarButton.addEventListener('click', () => {
     const palabraARemplacer = document.getElementById('palabraARemplacer').value;
     const palabraDeReemplazo = document.getElementById('palabraDeReemplazo').value;
     const cadenaResultante = cadenaInput.replaceAll(palabraARemplacer, palabraDeReemplazo);
-    document.getElementById('resultado').innerHTML = cadenaResultante;
+    document.getElementById('resultado2').innerHTML = cadenaResultante;
+});
+
+const recortarButton = document.getElementById('recortarButton');
+
+recortarButton.addEventListener('click', () => {
+    const cadenaInput = document.getElementById('cadenaInput2').value;
+    const numeroInput = parseInt(document.getElementById('numeroInput2').value, 10);
+
+    const nuevaCadena = cadenaInput.substring(0, numeroInput);
+
+    document.getElementById('resultados').innerHTML = nuevaCadena;
 });
