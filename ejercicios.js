@@ -1,64 +1,62 @@
-function pedirDatos() {
-    const nombre = prompt("¿Cuál es tu nombre?");
-    const fechaNacimiento = prompt("¿Cuál es tu fecha de nacimiento? (YYYY-MM-DD)");
+// function pedirDatos() {
+//     const nombre = prompt("¿Cuál es tu nombre?");
+//     const fechaNacimiento = prompt("¿Cuál es tu fecha de nacimiento? (YYYY-MM-DD)");
 
-    const edad = calcularEdad(fechaNacimiento);
-    const mensaje = `Hola ${nombre}, tienes ${edad} años!`;
+//     const edad = calcularEdad(fechaNacimiento);
+//     const mensaje = `Hola ${nombre}, tienes ${edad} años!`;
 
-    console.log(mensaje);
-    document.getElementById("resultado").textContent = mensaje;
-}
+//     console.log(mensaje);
+//     document.getElementById("resultado").textContent = mensaje;
+// }
 
-pedirDatos();
+// pedirDatos();
 
-const frutas = [
-    "manzana",
-    "plátano",
-    "naranja",
-    "fresa",
-    "kiwi",
-    "mango",
-    "piña",
-    "pera",
-    "uva",
-    "cereza"
-];
+// const frutas = [
+//     "manzana",
+//     "plátano",
+//     "naranja",
+//     "fresa",
+//     "kiwi",
+//     "mango",
+//     "piña",
+//     "pera",
+//     "uva",
+//     "cereza"
+// ];
 
-console.log("Lista de frutas disponibles:");
+// console.log("Lista de frutas disponibles:");
 
-mostrarFrutas(frutas);
-const frutaBuscada = prompt("¿Qué fruta estás buscando?");
+// mostrarFrutas(frutas);
+// const frutaBuscada = prompt("¿Qué fruta estás buscando?");
 
-BuscarFruta(frutas, frutaBuscada);
-
-
-console.log(10 == '10'); 
-console.log(10 === '10'); 
-console.log(typeof 10.6); 
-console.log(true == 1); 
+// BuscarFruta(frutas, frutaBuscada);
 
 
-const ciudad = {
-    nombre: "Buenos Aires",
-    fechaFundacion: "1536",
-    poblacion: 2890000,
-    extension: "203 km²"
-};
+// console.log(10 == '10'); 
+// console.log(10 === '10'); 
+// console.log(typeof 10.6); 
+// console.log(true == 1); 
 
 
-RecorrerCiudades(ciudad);
-
-let numeros = [
-    1,2,3,4,5,6,7,8,9,10
-]
-
-CrearDoble(numeros);
-
-DibujoUno();
-DibujoDos();
+// const ciudad = {
+//     nombre: "Buenos Aires",
+//     fechaFundacion: "1536",
+//     poblacion: 2890000,
+//     extension: "203 km²"
+// };
 
 
+// RecorrerCiudades(ciudad);
 
-let nombresArray = prompt("Ingrese una lista de nombres separados por comas")
+// let numeros = [
+//     1,2,3,4,5,6,7,8,9,10
+// ]
 
-SepararNombres(nombresArray)
+// CrearDoble(numeros);
+
+// DibujoUno();
+// DibujoDos();
+
+
+
+

@@ -63,11 +63,30 @@ function DibujoDos()
     
 }
 
-function SepararNombres(nombres)
-{
-    let listaNombres = nombres.split(',')
 
-    let nombresConA = listaNombres.filter(nombre => nombre[0].toLowerCase()=== 'a')
 
-    console.log(nombresConA)
-}
+
+
+const filtrarButton = document.getElementById('filtrarButton');
+
+filtrarButton.addEventListener('click', () =>{
+    const nombresInput = document.getElementById('nombresInput');
+    const nombre = nombresInput.value;
+    const nombresArray = nombre.split(',').map(n => n.trim());
+    console.log(nombresArray);
+    const nombresConA = nombresArray.filter(n => n.startsWith('A'));
+    
+    document.getElementById('resultado').innerHTML = nombresConA.join(', ');
+});
+
+
+
+const reemplazarButton = document.getElementById('reemplazarButton');
+
+reemplazarButton.addEventListener('click', () => {
+    const cadenaInput = document.getElementById('cadenaInput').value;
+    const palabraARemplacer = document.getElementById('palabraARemplacer').value;
+    const palabraDeReemplazo = document.getElementById('palabraDeReemplazo').value;
+    const cadenaResultante = cadenaInput.replaceAll(palabraARemplacer, palabraDeReemplazo);
+    document.getElementById('resultado').innerHTML = cadenaResultante;
+});
