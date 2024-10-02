@@ -101,3 +101,13 @@ recortarButton.addEventListener('click', () => {
 
     document.getElementById('resultados').innerHTML = nuevaCadena;
 });
+
+
+const mostrarButton = document.getElementById('mostrarButton');
+
+mostrarButton.addEventListener('click', () => {
+    const elementosInput = document.getElementById('elementosInput').value;
+    const elementosArray = elementosInput.split(',').map(elemento => elemento.trim()); 
+    const resultadoString = elementosArray.join(' - ');
+    document.getElementById('resultados2').innerHTML = resultadoString;
+});
